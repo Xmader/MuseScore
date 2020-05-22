@@ -3721,8 +3721,7 @@ static bool doProcessJob(QString jsonFile)
                         return false;
                         }
                   }
-            if (!convert(inFile, outFiles, plugin))
-                  return false;
+            convert(inFile, outFiles, plugin)
             }
       return true;
       }
